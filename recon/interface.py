@@ -12,7 +12,7 @@ def main():
     # Custom -help alias since we use -convert instead of positional arguments
     parser.add_argument('-help', '--help', action='help',
                         help='Show a help message and exit')
-    parser.add_argument('-version', action='version',
+    parser.add_argument('-v', '--version', '-version', action='version',
                         version=f'%(prog)s {__version__}',
                         help='Show program version and exit')
     parser.add_argument('-convert', metavar='FILE', type=str, required=True,
