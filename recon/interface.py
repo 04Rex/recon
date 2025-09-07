@@ -9,9 +9,6 @@ def main():
     parser = argparse.ArgumentParser(
         description="Recon: Convert between JSON, YAML, XML, and Markdown."
     )
-    # Custom -help alias since we use -convert instead of positional arguments
-    parser.add_argument('-help', '--help', action='help',
-                        help='Show a help message and exit')
     parser.add_argument('-v', '--version', '-version', action='version',
                         version=f'%(prog)s {__version__}',
                         help='Show program version and exit')
