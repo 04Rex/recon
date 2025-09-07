@@ -16,7 +16,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'recon=recon.cli:main'
+            'recon=recon.interface:main'
         ]
     },
     classifiers=[
